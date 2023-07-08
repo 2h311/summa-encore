@@ -11,7 +11,7 @@
       href="{{ url_for('static', filename='favicon/favicon-16x16.png' ) }}">
     <link rel="icon" href="{{ url_for('static', filename='favicon/favicon.ico' ) }}">
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css' )}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css' )}}">
     <title>Summa Encore &vert; {{ context.get("title") }}</title>
   </head>
 
@@ -36,7 +36,7 @@
               <li class="navbar__list-item"><a href="/about" class="navbar__list-link">About</a></li>
               <li class="navbar__list-item"><a href="/blog" class="navbar__list-link">Blog</a></li>
               <li class="navbar__list-item"><a href="/career" class="navbar__list-link">Career</a></li>
-              <li class="navbar__list-item"><a href="/contact-us" class="navbar__list-link">Contact Us</a></li>
+              <li class="navbar__list-item"><a href="/contact-us" class="btn btn--contact-us">Contact Us</a></li>
             </ul>
           </div>
         </nav>
