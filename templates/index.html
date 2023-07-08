@@ -1,0 +1,49 @@
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180"
+      href="{{ url_for('static', filename='favicon/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32"
+      href="{{ url_for('static', filename='favicon/favicon-32x32.png' ) }}">
+    <link rel="icon" type="image/png" sizes="16x16"
+      href="{{ url_for('static', filename='favicon/favicon-16x16.png' ) }}">
+    <link rel="icon" href="{{ url_for('static', filename='favicon/favicon.ico' ) }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css' )}}">
+    <title>Summa Encore &vert; {{ context.get("title") }}</title>
+  </head>
+
+  <body>
+
+    <!-- navbar -->
+    <section class="nav">
+      <div class="nav__inner">
+        <nav class="navbar">
+          <div class="navbar__left">
+            <a href="{{ url_for('index')}}" class="logo__link">
+              <h1 class="logo__text">
+                <span class="logo__text-left">Summa</span><br>
+                <span class="logo__text-right">Encore</span>
+              </h1>
+            </a>
+          </div>
+
+          <div class="navbar__right">
+            <ul class="navbar__list-container">
+              <li class="navbar__list-item"><a href="/services" class="navbar__list-link">Services</a></li>
+              <li class="navbar__list-item"><a href="/about" class="navbar__list-link">About</a></li>
+              <li class="navbar__list-item"><a href="/blog" class="navbar__list-link">Blog</a></li>
+              <li class="navbar__list-item"><a href="/career" class="navbar__list-link">Career</a></li>
+              <li class="navbar__list-item"><a href="/contact-us" class="navbar__list-link">Contact Us</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </section>
+    <!-- end of navbar -->
+
+  </body>
+
+</html>
