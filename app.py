@@ -9,3 +9,8 @@ def index():
     return render_template(
         "index.html", context={"title": "Your One Stop Digital Creative Agency"}
     )
+
+
+@app.route("/blog")
+def blog():
+    ...

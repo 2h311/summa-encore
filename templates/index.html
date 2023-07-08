@@ -16,33 +16,33 @@
   </head>
 
   <body>
-
-    <!-- navbar -->
-    <section class="nav">
-      <div class="nav__inner">
-        <nav class="navbar">
-          <div class="navbar__left">
-            <a href="{{ url_for('index')}}" class="logo__link">
-              <h1 class="logo__text">
-                <span class="logo__text-left">Summa</span><br>
-                <span class="logo__text-right">Encore</span>
-              </h1>
-            </a>
-          </div>
-
-          <div class="navbar__right">
-            <ul class="navbar__list-container">
-              <li class="navbar__list-item"><a href="/services" class="navbar__list-link">Services</a></li>
-              <li class="navbar__list-item"><a href="/about" class="navbar__list-link">About</a></li>
-              <li class="navbar__list-item"><a href="/blog" class="navbar__list-link">Blog</a></li>
-              <li class="navbar__list-item"><a href="/career" class="navbar__list-link">Career</a></li>
-              <li class="navbar__list-item"><a href="/contact-us" class="btn btn--contact-us">Contact Us</a></li>
-            </ul>
-          </div>
-        </nav>
+    <!-- main -->
+    <main class="main">
+      <div class="main__navbar" style="padding-top: 2.25rem;">
+        {% include "navbar.html" %}
       </div>
+      
+      <div class="main__inner">
+        <h1 class="heading-1">
+          <span>Your Trusted Partner</span><br><span>for Digital Success</span>
+        </h1>
+        <h2 class="heading-2">
+          <span>Unlock Your Digital Potential, Ignite Success!</span><br>
+          <span>Revolutionize Your Brand with Our Expert Digital Solutions.</span>
+        </h2>
+        <p class="main__paragraph">Join the Digital Evolution Today!</p>
+        <a href="/contact-us" class="btn btn--contact-us--2">Contact Us</a>
+      </div>
+    </main>
+    <!-- end of main -->
+
+    <!-- hero -->
+    <section class="hero">&nbsp;</section>
+    <!-- end of hero -->
+
+    <section class="services">
+      hello world
     </section>
-    <!-- end of navbar -->
 
   </body>
 
