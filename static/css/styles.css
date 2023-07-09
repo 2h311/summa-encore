@@ -153,24 +153,40 @@ body {
   width: 100%;
 }
 .about__inner {
-  width: 34%;
+  width: 35%;
   margin: 0 auto;
-  padding: 5.25rem 0;
+  padding: 8.25rem 0;
+}
+.about__title {
+  display: flex;
+  align-items: first baseline;
+  gap: 1rem;
+}
+.about__title svg {
+  height: 2rem;
+  fill: #061833;
+}
+.about__branding:not(:last-child) {
+  margin-bottom: 3.2rem;
+}
+.about__branding--1 {
+  text-align: center;
 }
 .about__heading-2 {
-  font-size: 2.85rem;
-  text-align: center;
-  font-weight: 600;
+  font-size: 3.25rem;
+  font-weight: 800;
   color: #061833;
 }
 .about__heading-3 {
-  font-size: 2.25rem;
-  font-weight: 500;
+  font-size: 2.32rem;
+  font-weight: 600;
+  color: #061833;
+  margin-bottom: 0.65rem;
 }
 .about__text {
-  font-size: 1.85rem;
+  font-size: 1.82rem;
   font-weight: 300;
-  color: #4d5969;
+  color: #3f4853;
 }
 
 /*# sourceMappingURL=styles.css.map */

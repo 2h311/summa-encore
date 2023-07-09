@@ -177,31 +177,51 @@ body {
 .about{
   max-width: 100%;
   width: 100%;
-  // background-color: aqua;
+  // background-color: antiquewhite;
   
   &__inner{
-    // background-color: beige;
-    // border: 1px solid #000;
-    width: 34%;
+    width: 35%;
     margin: 0 auto;
-    padding: 5.25rem 0;
+    padding: 8.25rem 0;
+  }
+
+  &__title{
+    display: flex;
+    align-items: first baseline;
+    gap: 1rem;
+    
+    & svg{
+      height: 2rem;
+      fill: #061833;;
+    }
+  }
+
+  &__branding{
+    &:not(:last-child){
+      margin-bottom: 3.2rem;
+    }
+  
+    &--1{
+      text-align: center;
+    }
   }
 
   &__heading-2{
-    font-size: 2.85rem;
-    text-align: center;
-    font-weight: 600;
+    font-size: 3.25rem;
+    font-weight: 800;
     color: #061833;
   }
 
   &__heading-3{
-    font-size: 2.25rem;
-    font-weight: 500;
+    font-size: 2.32rem;
+    font-weight: 600;
+    color: #061833;
+    margin-bottom: .65rem;
   }
 
   &__text{
-    font-size: 1.85rem;
+    font-size: 1.82rem;
     font-weight: 300;
-    color: #4d5969;
+    color: #3f4853;
   }
 }
