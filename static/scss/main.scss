@@ -38,7 +38,7 @@ body {
   }
   
   &__right{
-    width: 50%;
+    width: 36%;
   }
   
   &__list-container{
@@ -129,6 +129,7 @@ body {
 .main{
   max-width: 100%;
   min-height: 85vh;
+  // background-color: rgb(247, 247, 235);
 
   &__inner{
     width: 60%;
@@ -161,11 +162,11 @@ body {
 }
 
 .hero {
-  height: 82rem;
+  height: 52rem;
   background-image: url("/static/computer.jpg");
   background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: 100%;
+  background-position: center;
+  background-size: 100% 262%;
 
   &__image{
     width: 100%;
@@ -173,3 +174,34 @@ body {
   }
 }
 
+.about{
+  max-width: 100%;
+  width: 100%;
+  // background-color: aqua;
+  
+  &__inner{
+    // background-color: beige;
+    // border: 1px solid #000;
+    width: 34%;
+    margin: 0 auto;
+    padding: 5.25rem 0;
+  }
+
+  &__heading-2{
+    font-size: 2.85rem;
+    text-align: center;
+    font-weight: 600;
+    color: #061833;
+  }
+
+  &__heading-3{
+    font-size: 2.25rem;
+    font-weight: 500;
+  }
+
+  &__text{
+    font-size: 1.85rem;
+    font-weight: 300;
+    color: #4d5969;
+  }
+}

@@ -14,10 +14,9 @@
 
       <div class="navbar__right">
         <ul class="navbar__list-container">
-          <li class="navbar__list-item"><a href="/services" class="navbar__list-link">Services</a></li>
           <li class="navbar__list-item"><a href="/about" class="navbar__list-link">About</a></li>
-          <li class="navbar__list-item"><a href="/blog" class="navbar__list-link">Blog</a></li>
-          <li class="navbar__list-item"><a href="/career" class="navbar__list-link">Career</a></li>
+          <li class="navbar__list-item"><a href="{{ url_for('blog') }}" class="navbar__list-link">Blog</a></li>
+          <li class="navbar__list-item"><a href="{{ url_for('careers') }}" class="navbar__list-link">Careers</a></li>
           <li class="navbar__list-item"><a href="/contact-us" class="btn btn--contact-us">Contact Us</a></li>
         </ul>
       </div>

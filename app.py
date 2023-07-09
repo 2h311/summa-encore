@@ -13,4 +13,9 @@ def index():
 
 @app.route("/blog")
 def blog():
-    ...
+    return render_template("blog.html", context={"title": ""})
+
+
+@app.route("/careers")
+def careers():
+    return render_template("careers.html", context={"title": ""})
