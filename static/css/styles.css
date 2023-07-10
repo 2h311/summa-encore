@@ -237,8 +237,10 @@ body {
 }
 .contact__left {
   width: 36%;
-  padding: 2.5rem;
   border: 1px solid #061833;
+  display: flex;
+  flex-direction: column;
+  gap: 1.42rem;
 }
 .contact__right {
   height: 720px;
@@ -247,6 +249,30 @@ body {
   background-repeat: no-repeat;
   background-position: top;
   background-size: 130%;
+}
+.contact__heading {
+  font-size: 2.45rem;
+  font-weight: 500;
+  color: #061833;
+}
+.contact__text {
+  font-size: 1.65rem;
+}
+.contact__form {
+  font-size: 1.45rem;
+}
+.contact__input {
+  font-size: 1.45rem;
+  padding: 1rem 1.5rem;
+  border-radius: 4.5px;
+  border: 1.45px solid #061833;
+}
+.contact__input::placeholder {
+  font-family: "Inter", "Poppins", sans-serif;
+  color: #3f4853;
+}
+.contact__input:focus {
+  outline: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
