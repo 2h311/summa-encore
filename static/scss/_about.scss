@@ -1,0 +1,52 @@
+.about {
+  max-width: 100%;
+  width: 100%;
+  background-color: rgba(247, 243, 237, 0.836);
+
+  &__inner {
+    width: 32%;
+    margin: 0 auto;
+    padding: 12.25rem 0;
+  }
+
+  &__title {
+    display: flex;
+    align-items: first baseline;
+    gap: 1rem;
+
+    & svg {
+      height: 2rem;
+      fill: #061833;
+    }
+  }
+
+  &__branding {
+    &:not(:last-child) {
+      margin-bottom: 3.2rem;
+    }
+
+    &--1 {
+      text-align: center;
+    }
+  }
+
+  &__heading-2 {
+    font-size: 4.25rem;
+    font-weight: 800;
+    color: #061833;
+  }
+
+  &__heading-3 {
+    font-size: 2.42rem;
+    font-weight: 600;
+    color: #061833;
+    margin-bottom: 0.65rem;
+  }
+
+  &__text {
+    font-size: 1.92rem;
+    font-weight: 300;
+    color: #3f4853;
+    line-height: 1.52;
+  }
+}
