@@ -9,26 +9,28 @@
       </div>
 
       <form action="" class="contact__form">
-        <div class="contact-form__group input-group">
-          <label for="firstname" class="contact-label">First name</label>
-          <input type="text" class="contact__input" placeholder="First name">
+        <div class="contact-form__names">
+          <div class="contact-form__group input-group">
+            <label for="firstname" class="contact-label">First Name</label>
+            <input type="text" class="contact__input" placeholder="First name">
+          </div>
+
+          <div class="contact-form__group input-group">
+            <label for="lastname" class="contact-label">Last Name</label>
+            <input type="text" name="lastname" id="lastname" class="contact__input" placeholder="Last name">
+          </div>
         </div>
 
         <div class="contact-form__group input-group">
-          <label for="lastname" class="contact-label">Last name</label>
-          <input type="text" name="lastname" id="lastname" class="contact__input" placeholder="Last name">
-        </div>
-
-        <div class="contact-form input-group">
           <label for="email" class="contact-label">Email</label>
           <input type="email" name="email" id="email" class="contact__input" placeholder="info@summaencore.com">
         </div>
 
-        <div class="contact-form input-group">
+        <div class="contact-form__group input-group">
           <label for="message" class="contact-label">Message</label>
-          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+          <textarea class="contact__message" name="message" id="message" rows="8"></textarea>
         </div>
-        <input type="submit" value="Send Message" class="contact__btn">
+        <input type="submit" value="Send Message" class="btn btn--message">
       </form>
 
     </div>

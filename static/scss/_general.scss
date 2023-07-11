@@ -36,34 +36,6 @@
   }
 }
 
-.btn {
-  padding: 10px 16px;
-  font-weight: 600;
-  font-size: 1.4rem;
-  color: #061833;
-  border: 2.3px solid #061833;
-  background-color: #fff;
-  font-family: "Inter", "Poppins", sans-serif;
-  transition: all 0.2s ease-in;
-
-  &--contact-us {
-    text-decoration: none;
-    width: 120px;
-
-    &--2 {
-      display: inline-block;
-      margin-top: 32px;
-      text-decoration: none;
-      font-size: 1.65rem;
-    }
-  }
-
-  &:hover {
-    color: #fff;
-    background-color: #061833;
-  }
-}
-
 .main {
   max-width: 100%;
   min-height: 85vh;
