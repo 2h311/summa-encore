@@ -14,6 +14,7 @@
     display: flex;
     flex-direction: column;
     gap: 1.42rem;
+    background-color: aqua;
   }
 
   &__right {
@@ -37,6 +38,12 @@
 
   &__form {
     font-size: 1.45rem;
+  }
+  
+  &__container{
+    display: flex; 
+    flex-direction: column;
+    gap: 1rem;
   }
 
   &__input {
