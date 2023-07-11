@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 
 app = Flask(__name__)
@@ -19,3 +19,10 @@ def blog():
 @app.route("/careers")
 def careers():
     return render_template("careers.html", context={"title": ""})
+
+
+@app.route("/contact-us", methods=["POST"])
+def contact():
+    if request.method.lower() == "post":
+        ...
+    print(request)
