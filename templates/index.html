@@ -1,51 +1,49 @@
-<html lang="en">
+{% extends "base.html" %}
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180"
-      href="{{ url_for('static', filename='favicon/apple-touch-icon.png') }}">
-    <link rel="icon" type="image/png" sizes="32x32"
-      href="{{ url_for('static', filename='favicon/favicon-32x32.png' ) }}">
-    <link rel="icon" type="image/png" sizes="16x16"
-      href="{{ url_for('static', filename='favicon/favicon-16x16.png' ) }}">
-    <link rel="icon" href="{{ url_for('static', filename='favicon/favicon.ico' ) }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css' )}}">
-    <title>Summa Encore &vert; {{ context.get("title") }}</title>
-  </head>
+{% block head %}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="apple-touch-icon" sizes="180x180"
+  href="{{ url_for('static', filename='favicon/apple-touch-icon.png') }}">
+<link rel="icon" type="image/png" sizes="32x32"
+  href="{{ url_for('static', filename='favicon/favicon-32x32.png' ) }}">
+<link rel="icon" type="image/png" sizes="16x16"
+  href="{{ url_for('static', filename='favicon/favicon-16x16.png' ) }}">
+<link rel="icon" href="{{ url_for('static', filename='favicon/favicon.ico' ) }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css' )}}">
+<title>Summa Encore &vert; {{ context.get("title") }}</title>
+{% endblock head %}
 
-  <body>
-    <!-- main -->
-    <main class="main">
-      <div class="main__navbar" style="padding-top: 2.25rem;">
-        {% include "navbar.html" %}
-      </div>
+{% block body %}
+<!-- main -->
+<main class="main">
+  <div class="main__navbar" style="padding-top: 2.25rem;">
+    {% include "navbar.html" %}
+  </div>
 
-      <div class="main__inner">
-        <h1 class="heading-1">
-          <span>Your Trusted Partner</span><br><span>for Digital Success</span>
-        </h1>
-        <h2 class="heading-2">
-          <span>Unlock Your Digital Potential, Ignite Success!</span><br>
-          <span>Revolutionize Your Brand with Our Expert Digital Solutions.</span>
-        </h2>
-        <p class="main__paragraph">Join the Digital Evolution Today!</p>
-        <a href="#contact-us" class="btn btn--contact-us--2">Contact Us</a>
-      </div>
-    </main>
-    <!-- end of main -->
+  <div class="main__inner">
+    <h1 class="heading-1">
+      <span>Your Trusted Partner</span><br><span>for Digital Success</span>
+    </h1>
+    <h2 class="heading-2">
+      <span>Unlock Your Digital Potential, Ignite Success!</span><br>
+      <span>Revolutionize Your Brand with Our Expert Digital Solutions.</span>
+    </h2>
+    <p class="main__paragraph">Join the Digital Evolution Today!</p>
+    <a href="#contact-us" class="btn btn--contact-us--2">Contact Us</a>
+  </div>
+</main>
+<!-- end of main -->
 
-    <!-- hero -->
-    <section class="hero">&nbsp;</section>
-    <!-- end of hero -->
-    {% include "about.html" %}
-    <!-- inpage blog posts -->
-    <!-- {% include "blog.html"%} -->
-    <!-- end of inpage blog posts -->
+<!-- hero -->
+<section class="hero">&nbsp;</section>
+<!-- end of hero -->
+{% include "about.html" %}
+<!-- inpage blog posts -->
+<!-- {% include "blog.html"%} -->
+<!-- end of inpage blog posts -->
 
-    {% include "contact.html" %}
-    {% include "footer.html" %}
-    <script src="{{ url_for('static', filename='js/scripts.js')}}"></script>
-  </body>
-
-</html>
+{% include "contact.html" %}
+{% include "footer.html" %}
+<script src="{{ url_for('static', filename='js/scripts.js')}}"></script>
+{% endblock body %}
