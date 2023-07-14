@@ -263,10 +263,9 @@ body {
 }
 .navbar__list-item {
   list-style: none;
-  font-size: 1.52rem;
   text-align: center;
 }
-.navbar__list-item:hover > a {
+.navbar__list-item:hover > .navbar__list-link {
   color: #fff;
   background-color: #061833;
 }
@@ -278,6 +277,11 @@ body {
   display: inline-block;
   text-align: center;
   transition: all 0.32s ease-in;
+  font-family: "Inter", "Poppins", sans-serif;
+  border: 0;
+  font-size: 1.65rem;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .btn {

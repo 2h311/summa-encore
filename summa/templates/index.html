@@ -3,12 +3,9 @@
 {% block head %}
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="apple-touch-icon" sizes="180x180"
-  href="{{ url_for('static', filename='favicon/apple-touch-icon.png') }}">
-<link rel="icon" type="image/png" sizes="32x32"
-  href="{{ url_for('static', filename='favicon/favicon-32x32.png' ) }}">
-<link rel="icon" type="image/png" sizes="16x16"
-  href="{{ url_for('static', filename='favicon/favicon-16x16.png' ) }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='favicon/apple-touch-icon.png') }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='favicon/favicon-32x32.png' ) }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='favicon/favicon-16x16.png' ) }}">
 <link rel="icon" href="{{ url_for('static', filename='favicon/favicon.ico' ) }}">
 <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css' )}}">
 <title>Summa Encore &vert; {{ context.get("title") }}</title>
@@ -30,7 +27,7 @@
       <span>Revolutionize Your Brand with Our Expert Digital Solutions.</span>
     </h2>
     <p class="main__paragraph">Join the Digital Evolution Today!</p>
-    <a href="#contact-us" class="btn btn--contact-us--2">Contact Us</a>
+    <button class="btn btn--contact-us--2 js-contact-button" type="button">Contact Us</button>
   </div>
 </main>
 <!-- end of main -->

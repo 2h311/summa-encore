@@ -19,11 +19,10 @@
 
   &__list-item {
     list-style: none;
-    font-size: 1.52rem;
     text-align: center;
   }
 
-  &__list-item:hover > a {
+  &__list-item:hover > &__list-link {
     color: #fff;
     background-color: #061833;
   }
@@ -36,5 +35,10 @@
     display: inline-block;
     text-align: center;
     transition: all 0.32s ease-in;
+    font-family: "Inter", "Poppins", sans-serif;
+    border: 0;
+    font-size: 1.65rem;
+    background-color: transparent;
+    cursor: pointer;
   }
 }
