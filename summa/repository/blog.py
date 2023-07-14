@@ -2,6 +2,8 @@ import os
 
 import requests
 
+from summa import app
+
 
 payload = {
     "query": """
@@ -20,6 +22,6 @@ payload = {
 """
 }
 
-headers = {"authorization": f"Bearer {}"}
-# response = requests.post(, json=payload, headers=headers)
+headers = {"authorization": f"Bearer {app.config.get('HYGRAPH_TOKEN')}"}
+response = requests.post(app.config.get("HYGRAPH_ENDPOINT"), json=payload, headers=headers)
 assert response.ok
