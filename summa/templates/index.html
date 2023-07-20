@@ -8,7 +8,7 @@
 <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='favicon/favicon-16x16.png' ) }}">
 <link rel="icon" href="{{ url_for('static', filename='favicon/favicon.ico' ) }}">
 <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css' )}}">
-<title>Summa Encore &vert; {{ context.get("title") }}</title>
+<title>Summa Encore &vert; {{ title }}</title>
 {% endblock head %}
 
 {% block body %}
@@ -41,8 +41,26 @@
 {% block blogs %}
 <section class="posts">
   <div class="posts__inner">
-
-    {{ context.get("posts") }}
+    {% with firstpost=posts[0] %}
+      <div class="posts__left">
+        <div class="post__1">
+          <div class="post__1-image" style="width: 100%; height: 54rem; overflow: hidden; background-color: aqua;">
+            <img src="{{ firstpost['images']['url'] }}" alt="" class="" style="width: 200%;">
+          </div>
+          <div class="post__1-text-div">
+            <p class="post__date">{{ firstpost['createdAt'] }}</p>
+            <h3 class="heading-3">{{ firstpost['title']}}</h3>
+            <p class="post__description">{{ firstpost['description'] }}</p>
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="posts__right"></div>
+      
+    
+      <!-- {{ firstpost }} -->
+    {% endwith%}
   </div>
 
 </section>

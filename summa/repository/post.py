@@ -1,4 +1,4 @@
-import os
+import os, re
 
 import requests
 
@@ -11,7 +11,11 @@ def get_posts(payload: dict) -> list[dict]:
         app.config.get("HYGRAPH_ENDPOINT"), json=payload, headers=headers
     )
     assert response.ok, "An Error Occured"
-    return response.json()["data"]["blogPosts"]
+    posts = response.json()["data"]["blogPosts"]
+    # readjust the createdAt date
+    for post in posts:
+        post["createdAt"] = re.match("\d{4}-\d{2}-\d{2}", post["createdAt"]).group()
+    return posts
 
 
 def get_first_four():
@@ -25,7 +29,6 @@ def get_first_four():
                 createdAt
                 images {
                     url
-                    mimeType
                 }
             }
         }
