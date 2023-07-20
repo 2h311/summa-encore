@@ -18,14 +18,14 @@ def get_first_four():
     payload = {
         "query": """
         query Assets {
-            blogPosts(first: 4) {
+            blogPosts(orderBy: publishedAt_ASC, last: 4) {
                 slug
                 title
-                id
-                createdAt
                 description
-                richText {
-                    html
+                createdAt
+                images {
+                    url
+                    mimeType
                 }
             }
         }
@@ -38,7 +38,7 @@ def get_all_post():
     payload = {
         "query": """
         query Assets {
-            blogPosts {
+            blogPosts(orderBy: publishedAt_ASC) {
                 slug
                 title
                 id

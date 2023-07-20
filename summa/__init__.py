@@ -10,6 +10,7 @@ app.config["HYGRAPH_ENDPOINT"] = os.getenv("HYGRAPH_ENDPOINT")
 
 from .repository import post
 
+
 @app.route("/")
 def index():
     blog_posts = post.get_first_four()

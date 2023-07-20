@@ -83,3 +83,15 @@
     height: 100%;
   }
 }
+
+.posts{
+  width: 100%;
+  max-width: 100%;
+  background-color: #4d5969;
+  height: 42rem;
+  
+  &__inner{
+    width: 60%;
+    margin: 0 auto;
+  }
+}

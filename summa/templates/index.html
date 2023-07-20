@@ -36,8 +36,17 @@
 <section class="hero">&nbsp;</section>
 <!-- end of hero -->
 {% include "about.html" %}
+
 <!-- inpage blog posts -->
-<!-- {% include "blog.html"%} -->
+{% block blogs %}
+<section class="posts">
+  <div class="posts__inner">
+
+    {{ context.get("posts") }}
+  </div>
+
+</section>
+{% endblock blogs %}
 <!-- end of inpage blog posts -->
 
 {% include "contact.html" %}
