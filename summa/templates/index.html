@@ -44,23 +44,23 @@
     {% with firstpost=posts[0] %}
       <div class="posts__left">
         <div class="post__1">
-          <div class="post__1-image" style="width: 100%; height: 54rem; overflow: hidden; background-color: aqua;">
+          <div class="post__1-image" style="width: 100%; height: 56rem; overflow: hidden; background-color: aqua;">
             <img src="{{ firstpost['images']['url'] }}" alt="" class="" style="width: 200%;">
           </div>
           <div class="post__1-text-div">
-            <p class="post__date">{{ firstpost['createdAt'] }}</p>
+            <p class="post__date">Zac Sawyer &middot; {{ firstpost['createdAt'] }}</p>
             <h3 class="heading-3">{{ firstpost['title']}}</h3>
             <p class="post__description">{{ firstpost['description'] }}</p>
-          </div>
-          
+          </div>    
         </div>
       </div>
+      {% endwith%}
       
-      <div class="posts__right"></div>
-      
-    
-      <!-- {{ firstpost }} -->
-    {% endwith%}
+      <div class="posts__right">
+        {% for post in posts[1:] %}
+          <div>{{ post }}</div>
+        {% endfor %}
+      </div>
   </div>
 
 </section>
