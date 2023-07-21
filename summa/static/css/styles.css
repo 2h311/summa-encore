@@ -270,14 +270,34 @@ body {
   width: 65%;
   margin: 0 auto;
   display: flex;
-  gap: 4.2rem;
-  height: 100%;
+  gap: 2.2rem;
 }
 .posts__left {
   flex-basis: 50%;
 }
 .posts__right {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.posts__image {
+  width: 132%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.posts__div {
+  height: 33.3333333333%;
+  display: flex;
+  gap: 1.52rem;
+}
+.posts__div-image {
+  overflow: hidden;
   border: 1px solid black;
+  flex-basis: 50%;
+}
+.posts__div-text {
   flex-basis: 50%;
 }
 

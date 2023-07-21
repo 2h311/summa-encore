@@ -113,17 +113,43 @@
     width: 65%;
     margin: 0 auto;
     display: flex;
-    gap: 4.2rem;
-    height: 100%;
+    gap: 2.2rem;
   }
 
   &__left{
-    // border: 1px solid black;
     flex-basis: 50%;
+    // border: 1px solid black;    
   }
 
   &__right{
-    border: 1px solid black;    
+    // border: 1px solid black;    
     flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;  
+  }
+
+  &__image{
+    width: 132%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  &__div{
+    height: calc(100% / 3);
+    display: flex;
+    gap: 1.52rem;
+    // background-color: aqua;
+    
+    &-image{
+      overflow: hidden;
+      border: 1px solid black;
+      flex-basis: 50%;
+    }
+
+    &-text{
+      flex-basis: 50%;
+    }
   }
 }
