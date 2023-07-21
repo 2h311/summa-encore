@@ -1,6 +1,7 @@
 .contact {
   width: 100%;
   max-width: 100%;
+  margin-bottom: 12.4rem;
 
   &__inner {
     width: 100%;
@@ -9,16 +10,15 @@
   }
 
   &__left {
-    width: 32%;
+    width: 36.5%;
     display: flex;
     flex-direction: column;
     justify-content: center;    
-    gap: 3.2rem;
+    gap: 4.45rem;
   }
 
   &__right {
-    height: 82rem;
-    width: 48%;
+    width: 46%;
     background-image: url("/static/images/laptop-and-plant.jpg");
     background-repeat: no-repeat;
     background-position: top;
@@ -28,11 +28,12 @@
   &__heading {
     font-size: 2.65rem;
     font-weight: 600;
-    color: #061833;
+    color: var(--dark-grey-2);
   }
 
   &__text {
     font-size: 1.65rem;
+    color: var(--dark-grey-1);
   }
 
   &__form {
@@ -45,6 +46,7 @@
   
   &-label{
     font-weight: 500;
+    color: var(--dark-grey-2);
   }
 
   &-form__group{
@@ -71,7 +73,7 @@
 
   &__input {    
     &::placeholder {
-      color: #3f4853;
+      color: var(--dark-grey-1);
     }
 
     &:focus {
@@ -84,7 +86,7 @@
     font-size: 1.45rem;
     padding: 1.2rem 1.45rem;
     border-radius: 3.25px;
-    border: 2px solid #061833;
+    border: 2px solid var(--dark-grey-1);
   }
 
   &__message{

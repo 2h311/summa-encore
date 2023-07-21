@@ -1,10 +1,11 @@
 .btn {
   padding: 1rem 1.6rem;
   font-weight: 600;
-  font-size: 1.4rem;
-  color: #061833;
-  border: 2.3px solid #061833;
-  background-color: #fff;
+  font-size: 1.45rem;
+  color: var(--dark-grey-2);
+  border: 2.3px solid var(--dark-grey-2);
+  border-radius: 50px;
+  background-color: var(--light-yellow);
   font-family: "Inter", "Poppins", sans-serif;
   transition: all 0.2s ease-in;
   cursor: pointer;
@@ -22,21 +23,22 @@
     
     &, &--2{
       &:hover {
-        color: #fff;
-        background-color: #061833;
+        color: var(--light-yellow);
+        background-color: var(--dark-grey-2);
       }
     }
   }
 
   &--message{
-    color: #fff;
-    background-color: #061833;
-    border-radius: 3.25px;
+    color: var(--light-yellow);
+    background-color: var(--dark-grey-2);
+    border-radius: 3.5px;
     padding: 1.25rem 1.6rem;
 
     &:hover{
-      background-color: #061833;
-      color: #dce1e7;
+      background-color: var(--dark-grey-1);
+      color: var(--light-yellow);
+      border-color: var(--dark-grey-1);
     }
   }
 }

@@ -1,4 +1,6 @@
 .footer {
+  background-color: var(--light-yellow);
+  
   &__inner {
     width: 60%;
     margin: 0 auto;
@@ -10,31 +12,14 @@
   }
 
   &__right {
-    font-size: 1.45rem;
+    font-size: 1.65rem;
     font-weight: 500;
-    color: #061833;
     display: inherit;
     align-items: center;
     gap: 0.35rem;
 
     & svg {
-      fill: #061833;
-    }
-  }
-
-  &__text {
-    font-size: 1.15rem;
-    line-height: 1rem;
-    color: #061833;
-    background-color: #fff;
-    border-radius: 4.5px;
-    border: 2px solid #061833;
-    font-family: "Roboto Slab", "Russo One", serif, sans-serif;
-    padding: 8.5px 6.5px;
-    width: fit-content;
-
-    &-right {
-      font-size: 1.25rem;
+      fill: var(--dark-grey-2);
     }
   }
 }

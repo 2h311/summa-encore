@@ -1,12 +1,12 @@
 .about {
   max-width: 100%;
   width: 100%;
-  background-color: rgba(247, 243, 237, 0.836);
-
+  background-color: var(--light-yellow);
+  
   &__inner {
-    width: 32%;
+    width: 36%;
     margin: 0 auto;
-    padding: 12.25rem 0;
+    padding: 14rem 0;
   }
 
   &__title {
@@ -16,7 +16,7 @@
 
     & svg {
       height: 2rem;
-      fill: #061833;
+      fill: var(--dark-grey-2);
     }
   }
 
@@ -33,20 +33,20 @@
   &__heading-2 {
     font-size: 4.25rem;
     font-weight: 800;
-    color: #061833;
+    color: var(--dark-grey-2);
   }
 
   &__heading-3 {
     font-size: 2.42rem;
     font-weight: 600;
-    color: #061833;
+    color: var(--dark-grey-2);
     margin-bottom: 0.65rem;
   }
 
   &__text {
     font-size: 1.92rem;
     font-weight: 300;
-    color: #3f4853;
+    color: var(--dark-grey-2);
     line-height: 1.52;
   }
 }

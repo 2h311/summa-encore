@@ -7,8 +7,7 @@ load_dotenv()
 app = Flask(__name__)
 app.config["HYGRAPH_TOKEN"] = os.getenv("HYGRAPH_TOKEN")
 app.config["HYGRAPH_ENDPOINT"] = os.getenv("HYGRAPH_ENDPOINT")
-
-# from .reposiytory import post
+from .repository import post
 
 
 @app.route("/")
@@ -51,7 +50,7 @@ def index():
 
 @app.route("/blog")
 def blog():
-    return render_template("blog.html", context={"title": ""})
+    return render_template("blog.html", title="")
 
 
 @app.route("/careers")
