@@ -1,0 +1,67 @@
+.thanks{
+  height: 100vh;
+  max-width: 100vw;
+  background-color: var(--light-yellow);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  &__left{
+    width: max-content;
+    border-right: 3.2px solid var(--dark-grey-2);
+  }
+
+  &__right{ 
+    width: max-content;
+  }
+
+  &__inner{
+    text-align: center;
+    height: max-content;
+    
+    display: inherit;
+    gap: 2rem;
+  }
+  
+  &__heading{
+    color: var(--dark-grey-2);
+    font-weight: 400;
+    font-size: 2.25rem;
+    margin-bottom: 1.45rem;
+  }
+
+  &__button{
+    text-decoration: none;
+    padding: 1.25rem 5rem;
+    font-size: 1.95rem;
+    color: var(--light-yellow);
+    background-color: var(--dark-grey-2);
+    fill: var(--light-yellow);
+
+    display: inline-flex;
+    align-items: center;
+    gap: .65rem;
+    
+    &:hover .thanks__svg{
+      transform: translateX(.45rem);
+    }
+  }
+  
+  &__svg{
+    height: 2.65rem;  
+    transition: all 0.26s ease-in;
+  }
+
+  &__h1{
+    border: 0;
+    font-size: 5.45rem;
+    font-family: "Roboto Slab", "Russo One", serif, sans-serif;
+    padding-right: 18px;
+    line-height: 4.32rem;
+
+    &-right{
+      font-size: 6rem;
+    }
+  }
+}

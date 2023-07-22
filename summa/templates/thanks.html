@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block body %}
+<section class="thanks">
+  <div class="thanks__inner">
+    <div class="thanks__left">
+      <h1 class="thanks__h1">
+        <span class="thanks__h1-left">Summa</span><br>
+        <span class="thanks__h1-right">Encore</span>
+      </h1>
+    </div>
+
+    <div class="thanks__right">
+      <h3 class="thanks__heading">
+        <span>Your message has been received.</span> <br>
+        <span>We will soon be in touch via email <br>address you provided to assist you further!</span>
+      </h3>
+      <a class="thanks__button btn" href="{{ url_for('main.index')}}">
+        <span class="thanks__text">Home</span>
+        <svg class="thanks__svg" xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+          <path
+            d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" />
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

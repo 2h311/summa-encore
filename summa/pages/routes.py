@@ -1,6 +1,8 @@
-from flask import Blueprint, render_template, request, url_for, redirect
+from flask import Blueprint, render_template, request, url_for, redirect, flash
 from summa.repository import post
 from .forms import ContactForm
+from .models import ContactModel
+from summa import db
 
 main = Blueprint("main", __name__)
 
@@ -27,14 +29,22 @@ def careers():
     return render_template("careers.html", context={"title": ""})
 
 
+@main.route("/thanks")
+def thanks():
+    return render_template("thanks.html", title="Thank you for contacting us")
+
+
 @main.route("/contact-us", methods=["POST"])
 def contact():
     form = ContactForm(request.form)
     if request.method.lower() == "post" and form.validate():
-        firstname = form.firstname.data
-        lastname = form.lastname.data
-        email = form.email.data
-        message = form.message.data
-        print(firstname, message)
-
+        contact = ContactModel(
+            firstname=form.firstname.data,
+            lastname=form.lastname.data,
+            email=form.email.data,
+            message=form.message.data,
+        )
+        db.session.add(contact)
+        db.session.commit()
+        return redirect(url_for("main.thanks"))
     return redirect(url_for("main.index"))

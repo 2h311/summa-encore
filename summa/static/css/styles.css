@@ -230,6 +230,9 @@ body {
   font-weight: 600;
   color: var(--dark-grey-2);
 }
+.main__navbar {
+  padding-top: 2.25rem;
+}
 
 .heading-1 {
   font-size: 10.5rem;
@@ -411,6 +414,62 @@ body {
   background-color: var(--dark-grey-1);
   color: var(--light-yellow);
   border-color: var(--dark-grey-1);
+}
+
+.thanks {
+  height: 100vh;
+  max-width: 100vw;
+  background-color: var(--light-yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.thanks__left {
+  width: max-content;
+  border-right: 3.2px solid var(--dark-grey-2);
+}
+.thanks__right {
+  width: max-content;
+}
+.thanks__inner {
+  text-align: center;
+  height: max-content;
+  display: inherit;
+  gap: 2rem;
+}
+.thanks__heading {
+  color: var(--dark-grey-2);
+  font-weight: 400;
+  font-size: 2.25rem;
+  margin-bottom: 1.45rem;
+}
+.thanks__button {
+  text-decoration: none;
+  padding: 1.25rem 5rem;
+  font-size: 1.95rem;
+  color: var(--light-yellow);
+  background-color: var(--dark-grey-2);
+  fill: var(--light-yellow);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+.thanks__button:hover .thanks__svg {
+  transform: translateX(0.45rem);
+}
+.thanks__svg {
+  height: 2.65rem;
+  transition: all 0.26s ease-in;
+}
+.thanks__h1 {
+  border: 0;
+  font-size: 5.45rem;
+  font-family: "Roboto Slab", "Russo One", serif, sans-serif;
+  padding-right: 18px;
+  line-height: 4.32rem;
+}
+.thanks__h1-right {
+  font-size: 6rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
