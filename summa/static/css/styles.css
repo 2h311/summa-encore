@@ -24,6 +24,11 @@ body {
   --dark-grey-2: #242525;
 }
 
+::selection {
+  background-color: var(--dark-grey-1);
+  color: var(--light-yellow);
+}
+
 .about {
   max-width: 100%;
   width: 100%;
