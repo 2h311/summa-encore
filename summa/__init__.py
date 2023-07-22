@@ -31,5 +31,8 @@ def careers():
 @app.route("/contact-us", methods=["POST"])
 def contact():
     if request.method.lower() == "post":
-        ...
-    print(request)
+
+        form = request.form
+        print(form)
+
+    return "message received"

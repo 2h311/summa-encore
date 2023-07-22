@@ -12,25 +12,25 @@
         <div class="contact-form__names">
           <div class="contact-form__group input-group">
             <label for="firstname" class="contact-label">First Name</label>
-            <input type="text" class="contact__input" placeholder="First name" autocomplete="off">
+            <input type="text" class="contact__input" placeholder="First name" autocomplete="off" required>
           </div>
 
           <div class="contact-form__group input-group">
             <label for="lastname" class="contact-label">Last Name</label>
             <input type="text" name="lastname" id="lastname" class="contact__input" placeholder="Last name"
-              autocomplete="off">
+              autocomplete="off" required>
           </div>
         </div>
 
         <div class="contact-form__group input-group">
           <label for="email" class="contact-label">Email</label>
           <input type="email" name="email" id="email" class="contact__input" placeholder="info@summaencore.com"
-            autocomplete="off">
+            autocomplete="off" required>
         </div>
 
         <div class="contact-form__group input-group">
           <label for="message" class="contact-label">Message</label>
-          <textarea class="contact__message" name="message" id="message" rows="8"></textarea>
+          <textarea class="contact__message" name="message" id="message" rows="8" required></textarea>
         </div>
         <input type="submit" value="Send Message" class="btn btn--message">
       </form>
