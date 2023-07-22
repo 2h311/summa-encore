@@ -12,8 +12,7 @@ from .repository import post
 
 @app.route("/")
 def index():
-    # blog_posts = post.get_first_four()
-    blog_posts = []
+    blog_posts = post.get_first_four()
     return render_template(
         "index.html", title="Your One Stop Digital Creative Agency", posts=blog_posts
     )

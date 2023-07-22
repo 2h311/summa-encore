@@ -70,6 +70,8 @@ body {
   width: 100%;
   max-width: 100%;
   margin-bottom: 12.4rem;
+  height: 72rem;
+  display: flex;
 }
 .contact__inner {
   width: 100%;
@@ -276,7 +278,7 @@ body {
 }
 
 .posts {
-  margin: 12rem 0;
+  margin: 8rem 0 10rem;
   width: 100%;
   max-width: 100%;
 }
