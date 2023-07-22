@@ -54,14 +54,31 @@
   }
 
   &__h1{
+    color: var(--dark-grey-2);
     border: 0;
     font-size: 5.45rem;
     font-family: "Roboto Slab", "Russo One", serif, sans-serif;
-    padding-right: 18px;
+    padding-right: 32px;
     line-height: 4.32rem;
+    position: relative;
+    display: inline-block;
 
     &-right{
       font-size: 6rem;
     }
+  }
+}
+
+.thanks__squiggy{
+  height: auto;
+  width: 6.3%;
+  background-color: transparent;
+
+  position: absolute;
+  left: 59rem;
+  bottom: 40rem;
+
+  &-1{
+    left: 70.5rem;
   }
 }
