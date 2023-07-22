@@ -4,7 +4,7 @@
   <div class="nav__inner">
     <nav class="navbar">
       <div class="navbar__left">
-        <a href="{{ url_for('index')}}" class="logo__link">
+        <a href="{{ url_for('main.index')}}" class="logo__link">
           <h1 class="logo__text">
             <span class="logo__text-left">Summa</span><br>
             <span class="logo__text-right">Encore</span>
@@ -17,8 +17,8 @@
           <li class="navbar__list-item">
             <button type="button" class="navbar__list-link js-about-button">About</button>
           </li>
-          <li class="navbar__list-item"><a href="{{ url_for('blog') }}" class="navbar__list-link">Blog</a></li>
-          <li class="navbar__list-item"><a href="{{ url_for('careers') }}" class="navbar__list-link">Careers</a></li>
+          <li class="navbar__list-item"><a href="{{ url_for('main.blog') }}" class="navbar__list-link">Blog</a></li>
+          <li class="navbar__list-item"><a href="{{ url_for('main.careers') }}" class="navbar__list-link">Careers</a></li>
           <li class="navbar__list-item"><span class="btn btn--contact-us js-contact-button">Contact Us</span></li>
         </ul>
       </div>
