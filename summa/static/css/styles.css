@@ -9,6 +9,7 @@
 
 html {
   font-size: 62.5%;
+  font-kerning: normal;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
@@ -91,6 +92,8 @@ body {
   background-repeat: no-repeat;
   background-position: top;
   background-size: 130%;
+  border-top-left-radius: 6.5px;
+  border-bottom-left-radius: 6.5px;
 }
 .contact__heading {
   font-size: 2.65rem;
@@ -154,7 +157,7 @@ body {
   width: 65%;
   margin: 0 auto;
   max-width: 65%;
-  padding: 8.25rem 0 2.5rem;
+  padding: 3.25rem 0 2.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -169,6 +172,10 @@ body {
 .footer__image {
   width: 42px;
   height: auto;
+}
+.footer__hr {
+  width: 100%;
+  border: 2px solid var(--dark-grey-1);
 }
 
 .nav {

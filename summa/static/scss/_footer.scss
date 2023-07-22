@@ -5,7 +5,7 @@
     width: 65%;
     margin: 0 auto;
     max-width: 65%;
-    padding: 8.25rem 0 2.5rem;
+    padding: 3.25rem 0 2.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -19,9 +19,13 @@
     gap: .25rem;
   }
   
-
   &__image{
     width: 42px;
     height: auto;
+  }
+
+  &__hr{
+    width: 100%;
+    border: 2px solid var(--dark-grey-1);
   }
 }
