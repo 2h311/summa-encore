@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, request
+from flask import Blueprint, render_template, request, url_for, redirect
 from summa.repository import post
 from .forms import ContactForm
 
@@ -30,8 +30,11 @@ def careers():
 @main.route("/contact-us", methods=["POST"])
 def contact():
     form = ContactForm(request.form)
-    print(form)
-    if request.method.lower() == "post" and form.validate_on_submit():
-        print(form)
+    if request.method.lower() == "post" and form.validate():
+        firstname = form.firstname.data
+        lastname = form.lastname.data
+        email = form.email.data
+        message = form.message.data
+        print(firstname, message)
 
-    return "message received"
+    return redirect(url_for("main.index"))
