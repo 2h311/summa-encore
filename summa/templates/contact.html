@@ -9,6 +9,7 @@
       </div>
 
       <form action="{{ url_for('main.contact') }}" class="contact__form" method="post">
+        {{ form.hidden_tag() }}
         <div class="contact-form__names">
           <div class="contact-form__group input-group">
             <label for="firstname" class="contact-label">First Name</label>
