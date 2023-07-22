@@ -23,8 +23,7 @@
   }
 
   &__list-item:hover > &__list-link {
-    color: var(--light-yellow);
-    background-color: var(--dark-grey-2);
+    border-bottom: 2.5px solid var(--dark-grey-2);
   }
 
   &__list-link {
@@ -34,11 +33,12 @@
     padding: 1rem 1.6rem;
     display: inline-block;
     text-align: center;
-    transition: all 0.32s ease-in;
+    transition: all 0.26s ease-in;
     font-family: "Inter", "Poppins", sans-serif;
     border: 0;
     font-size: 1.45rem;
     background-color: transparent;
     cursor: pointer;
+    border-bottom: 2.5px solid transparent;
   }
 }

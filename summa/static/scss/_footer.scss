@@ -2,9 +2,9 @@
   background-color: var(--light-yellow);
   
   &__inner {
-    width: 60%;
+    width: 65%;
     margin: 0 auto;
-    max-width: 60%;
+    max-width: 65%;
     padding: 8.25rem 0 2.5rem;
     display: flex;
     align-items: center;
@@ -16,11 +16,12 @@
     font-weight: 500;
     display: inherit;
     align-items: center;
-    gap: 0.35rem;
+    gap: .25rem;
+  }
+  
 
-    & svg {
-      fill: var(--dark-grey-2);
-    }
+  &__image{
+    width: 42px;
+    height: auto;
   }
 }
-

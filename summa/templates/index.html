@@ -44,36 +44,38 @@
     <h2 class="heading-2">Recent Blog Posts</h2>
   </div>
   <div class="posts__inner">
-    {% with firstpost=posts[0] %}
-      <div class="posts__left">
-        <div class="post__1">
-          <div class="post__1-image">
-            <img src="{{ firstpost['images']['url'] }}" alt="{{ firstpost['slug'] }}">
+    {% if posts %}
+      {% with firstpost=posts[0] %}
+        <div class="posts__left">
+          <div class="post__1">
+            <div class="post__1-image">
+              <img src="{{ firstpost['images']['url'] }}" alt="{{ firstpost['slug'] }}">
+            </div>
+            <div class="post__1-text-div">
+              <p class="post__date">Zac Sawyer &middot; {{ firstpost['createdAt'] }}</p>
+              <h3 class="heading-3">{{ firstpost['title']}}</h3>
+              <p class="post__description">{{ firstpost['description'] }}</p>
+            </div>    
           </div>
-          <div class="post__1-text-div">
-            <p class="post__date">Zac Sawyer &middot; {{ firstpost['createdAt'] }}</p>
-            <h3 class="heading-3">{{ firstpost['title']}}</h3>
-            <p class="post__description">{{ firstpost['description'] }}</p>
-          </div>    
         </div>
-      </div>
-      {% endwith%}
-      
-      <div class="posts__right">
-        {% for post in posts[1:] %}
-          <div class="posts__div">
-            <div class="posts__div-image">
-              <img src="{{ post['images']['url'] }}" alt="{{ post['slug'] }}" class="posts__image">
+        {% endwith%}
+        
+        <div class="posts__right">
+          {% for post in posts[1:] %}
+            <div class="posts__div">
+              <div class="posts__div-image">
+                <img src="{{ post['images']['url'] }}" alt="{{ post['slug'] }}" class="posts__image">
+              </div>
+              <div class="posts__div-text">
+                <p class="post__date">Zac Sawyer &middot; {{ post['createdAt'] }}</p>
+                <h3 class="heading-3">{{ post['title'] }}</h3>
+                <p class="post__description">{{ post['description'] }}</p>
+              </div>
             </div>
-            <div class="posts__div-text">
-              <p class="post__date">Zac Sawyer &middot; {{ post['createdAt'] }}</p>
-              <h3 class="heading-3">{{ post['title'] }}</h3>
-              <p class="post__description">{{ post['description'] }}</p>
-            </div>
-          </div>
-        {% endfor %}
-      </div>
-  </div>
+          {% endfor %}
+        </div>
+    </div>
+  {% endif %}
 </section>
 {% endblock blogs %}
 <!-- end of inpage blog posts -->

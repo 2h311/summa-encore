@@ -149,9 +149,9 @@ body {
   background-color: var(--light-yellow);
 }
 .footer__inner {
-  width: 60%;
+  width: 65%;
   margin: 0 auto;
-  max-width: 60%;
+  max-width: 65%;
   padding: 8.25rem 0 2.5rem;
   display: flex;
   align-items: center;
@@ -162,10 +162,11 @@ body {
   font-weight: 500;
   display: inherit;
   align-items: center;
-  gap: 0.35rem;
+  gap: 0.25rem;
 }
-.footer__right svg {
-  fill: var(--dark-grey-2);
+.footer__image {
+  width: 42px;
+  height: auto;
 }
 
 .nav {
@@ -342,8 +343,7 @@ body {
   text-align: center;
 }
 .navbar__list-item:hover > .navbar__list-link {
-  color: var(--light-yellow);
-  background-color: var(--dark-grey-2);
+  border-bottom: 2.5px solid var(--dark-grey-2);
 }
 .navbar__list-link {
   color: var(--dark-grey-2);
@@ -352,12 +352,13 @@ body {
   padding: 1rem 1.6rem;
   display: inline-block;
   text-align: center;
-  transition: all 0.32s ease-in;
+  transition: all 0.26s ease-in;
   font-family: "Inter", "Poppins", sans-serif;
   border: 0;
   font-size: 1.45rem;
   background-color: transparent;
   cursor: pointer;
+  border-bottom: 2.5px solid transparent;
 }
 
 .btn {
