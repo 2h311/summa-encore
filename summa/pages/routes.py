@@ -21,12 +21,13 @@ def index():
 
 @main.route("/blog")
 def blog():
-    return render_template("blog.html", title="")
+    blog_posts = post.get_all_post()
+    return render_template("blog.html", title="Blog", posts=blog_posts)
 
 
 @main.route("/careers")
 def careers():
-    return render_template("careers.html", context={"title": ""})
+    return render_template("careers.html", title="Summa Encore Career Page")
 
 
 @main.route("/thanks")

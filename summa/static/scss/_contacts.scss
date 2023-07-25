@@ -15,7 +15,7 @@
     width: 36.5%;
     display: flex;
     flex-direction: column;
-    justify-content: center;    
+    justify-content: center;
     gap: 4.45rem;
   }
 
@@ -47,35 +47,35 @@
     gap: 2.45rem;
     width: 75%;
   }
-  
-  &-label{
+
+  &-label {
     font-weight: 500;
     color: var(--dark-grey-2);
   }
 
-  &-form__group{
+  &-form__group {
     display: flex;
     flex-direction: column;
     gap: .52rem;
   }
 
-  &-form__names{
+  &-form__names {
     display: flex;
     justify-content: space-between;
     width: 100%;
 
-    & > div{
+    & > div {
       width: 49%;
     }
   }
 
-  &__container{
-    display: flex; 
+  &__container {
+    display: flex;
     flex-direction: column;
     gap: .2rem;
   }
 
-  &__input {    
+  &__input {
     &::placeholder {
       color: var(--dark-grey-1);
     }
@@ -84,8 +84,9 @@
       outline: none;
     }
   }
-  
-  &__input, &__message{
+
+  &__input,
+  &__message {
     font-family: "Inter", "Poppins", sans-serif;
     font-size: 1.45rem;
     padding: 1.2rem 1.45rem;
@@ -93,7 +94,7 @@
     border: 2px solid var(--dark-grey-1);
   }
 
-  &__message{
+  &__message {
     resize: none;
   }
 }

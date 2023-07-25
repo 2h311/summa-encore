@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-{% block head %}
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='favicon/apple-touch-icon.png') }}">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='favicon/favicon-32x32.png' ) }}">
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='favicon/favicon-16x16.png' ) }}">
-  <link rel="icon" href="{{ url_for('static', filename='favicon/favicon.ico' ) }}">
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css' )}}">
-  <title>Summa Encore &vert; {{ title }}</title>
-{% endblock head %}
-</head>
-<body>
-  {% block body %}{% endblock body %}
-</body>
+
+  <head>
+    {% block head %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180"
+      href="{{ url_for('static', filename='favicon/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32"
+      href="{{ url_for('static', filename='favicon/favicon-32x32.png' ) }}">
+    <link rel="icon" type="image/png" sizes="16x16"
+      href="{{ url_for('static', filename='favicon/favicon-16x16.png' ) }}">
+    <link rel="icon" href="{{ url_for('static', filename='favicon/favicon.ico' ) }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css' )}}">
+    <title>Summa Encore &#8212; {{ title }}</title>
+    {% endblock head %}
+  </head>
+
+  <body>
+    {% block body %}{% endblock body %}
+    <script src="{{ url_for('static', filename='js/scripts.js')}}"></script>
+  </body>
+
 </html>

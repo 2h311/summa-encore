@@ -1,6 +1,6 @@
 .footer {
   background-color: var(--light-yellow);
-  
+
   &__inner {
     width: 65%;
     margin: 0 auto;
@@ -18,13 +18,13 @@
     align-items: center;
     gap: .25rem;
   }
-  
-  &__image{
+
+  &__image {
     width: 42px;
     height: auto;
   }
 
-  &__hr{
+  &__hr {
     max-width: 100%;
     border: 2px solid var(--dark-grey-1);
   }

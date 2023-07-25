@@ -19,13 +19,13 @@ body {
   font-family: "Inter", "Poppins", "Russo One", "Roboto Slab", serif, sans-serif;
 }
 
-:root{
+:root {
   --light-yellow: #FAF6F4;
   --dark-grey-1: #413D45;
   --dark-grey-2: #242525;
 }
 
-::selection{
+::selection {
   background-color: var(--dark-grey-1);
   color: var(--light-yellow);
 }

@@ -6,7 +6,6 @@
   <div class="main__navbar">
     {% include "navbar.html" %}
   </div>
-
   <div class="main__inner">
     <h1 class="heading-1">
       <span>Your Trusted Partner</span><br><span>for Digital Success</span>
@@ -27,7 +26,7 @@
 
 <!-- about section -->
 {% include "about.html" %}
-<!-- end of about section --> 
+<!-- end of about section -->
 
 <!-- inpage blog posts -->
 {% block blogs %}
@@ -37,36 +36,36 @@
   </div>
   <div class="posts__inner">
     {% if posts %}
-      {% with firstpost=posts[0] %}
-        <div class="posts__left">
-          <div class="post__1">
-            <div class="post__1-image">
-              <img src="{{ firstpost['images']['url'] }}" alt="{{ firstpost['slug'] }}">
-            </div>
-            <div class="post__1-text-div">
-              <p class="post__date">Zac Sawyer &middot; {{ firstpost['createdAt'] }}</p>
-              <h3 class="heading-3">{{ firstpost['title']}}</h3>
-              <p class="post__description">{{ firstpost['description'] }}</p>
-            </div>    
-          </div>
+    {% with firstpost=posts[0] %}
+    <div class="posts__left">
+      <div class="post__1">
+        <div class="post__1-image">
+          <img src="{{ firstpost['images']['url'] }}" alt="{{ firstpost['slug'] }}">
         </div>
-        {% endwith%}
-        
-        <div class="posts__right">
-          {% for post in posts[1:] %}
-            <div class="posts__div">
-              <div class="posts__div-image">
-                <img src="{{ post['images']['url'] }}" alt="{{ post['slug'] }}" class="posts__image">
-              </div>
-              <div class="posts__div-text">
-                <p class="post__date">Zac Sawyer &middot; {{ post['createdAt'] }}</p>
-                <h3 class="heading-3">{{ post['title'] }}</h3>
-                <p class="post__description">{{ post['description'] }}</p>
-              </div>
-            </div>
-          {% endfor %}
+        <div class="post__1-text-div">
+          <p class="post__date">Zac Sawyer &middot; {{ firstpost['createdAt'] }}</p>
+          <h3 class="heading-3">{{ firstpost['title']}}</h3>
+          <p class="post__description">{{ firstpost['description'] }}</p>
         </div>
+      </div>
     </div>
+    {% endwith%}
+
+    <div class="posts__right">
+      {% for post in posts[1:] %}
+      <div class="posts__div">
+        <div class="posts__div-image">
+          <img src="{{ post['images']['url'] }}" alt="{{ post['slug'] }}" class="posts__image">
+        </div>
+        <div class="posts__div-text">
+          <p class="post__date">Zac Sawyer &middot; {{ post['createdAt'] }}</p>
+          <h3 class="heading-3">{{ post['title'] }}</h3>
+          <p class="post__description">{{ post['description'] }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
   {% endif %}
 </section>
 {% endblock blogs %}
@@ -74,5 +73,4 @@
 
 {% include "contact.html" %}
 {% include "footer.html" %}
-<script src="{{ url_for('static', filename='js/scripts.js')}}"></script>
 {% endblock body %}
