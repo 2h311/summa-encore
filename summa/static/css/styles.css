@@ -426,7 +426,6 @@ body {
 }
 .thanks__left {
   width: max-content;
-  border-right: 3.2px solid var(--dark-grey-2);
 }
 .thanks__right {
   width: max-content;
@@ -435,7 +434,9 @@ body {
   text-align: center;
   height: max-content;
   display: inherit;
-  gap: 2rem;
+  align-items: center;
+  flex-direction: column;
+  gap: 2.25rem;
 }
 .thanks__heading {
   color: var(--dark-grey-2);
@@ -474,17 +475,8 @@ body {
 .thanks__h1-right {
   font-size: 6rem;
 }
-
-.thanks__squiggy {
-  height: auto;
-  width: 6.3%;
-  background-color: transparent;
-  position: absolute;
-  left: 59rem;
-  bottom: 40rem;
-}
-.thanks__squiggy-1 {
-  left: 70.5rem;
+.thanks__underline {
+  margin-top: 0.65rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
