@@ -72,6 +72,25 @@ body {
   line-height: 1.52;
 }
 
+.blog {
+  background-color: var(--light-yellow);
+}
+.blog__navbar {
+  padding-top: 2.25rem;
+}
+.blog__inner {
+  width: 65%;
+  margin: 4.25rem auto 0;
+}
+.blog__heading-3 {
+  font-size: 3.2rem;
+  color: var(--dark-grey-2);
+  margin-bottom: 2rem;
+}
+.blog__post {
+  background-color: aqua;
+}
+
 .contact {
   width: 100%;
   max-width: 100%;

@@ -1,7 +1,26 @@
 {% extends "base.html" %}
 
 {% block body %}
-{% include "navbar.html" %}
+<section class="blog">
+  <div class="blog__navbar">
+    {% include "navbar.html" %}
+  </div>
 
-{{ posts }}
+  <div class="blog__inner">
+    <h3 class="blog__heading-3">All our blogs</h3>
+    
+    {% if posts %}
+      {% for post in posts %}
+        <div class="blog__post" style="margin-bottom: 5rem;">
+          <div class="blog__post--left">
+            {{ post }}
+          </div>
+          <div class="blog__post--right">
+            {{ post }}
+          </div>
+        </div>  
+      {% endfor %}
+    {% endif %}
+  </div>
+</section>
 {% endblock body %}

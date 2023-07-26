@@ -23,13 +23,11 @@ def index():
 
 @main.route("/blog")
 def blog():
+    # TODO: use this for now, till we got the page sorted out. 
     import pathlib
     json_file = pathlib.Path().cwd() / "summa" / "pages" / "posts.json"
-    json_filename = str(json_file)
-    content = open(json_filename, "r")
-    r = json.loads(content.read())
-    print(r)
-    # blog_posts = json.load(open(json_file.abspath))
+    blog_posts = json.load(open(json_file))
+
     return render_template("blog.html", title="Blog", posts=blog_posts)
 
 
