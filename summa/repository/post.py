@@ -65,6 +65,9 @@ def get_all_post():
                 id
                 createdAt
                 description
+                images {
+                    url
+                }
                 richText {
                     html
                 }
