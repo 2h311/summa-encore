@@ -1,3 +1,5 @@
+import json
+
 from flask import Blueprint, render_template, request, url_for, redirect, flash
 from summa.repository import post
 from .forms import ContactForm
@@ -21,7 +23,13 @@ def index():
 
 @main.route("/blog")
 def blog():
-    blog_posts = post.get_all_post()
+    import pathlib
+    json_file = pathlib.Path().cwd() / "summa" / "pages" / "posts.json"
+    json_filename = str(json_file)
+    content = open(json_filename, "r")
+    r = json.loads(content.read())
+    print(r)
+    # blog_posts = json.load(open(json_file.abspath))
     return render_template("blog.html", title="Blog", posts=blog_posts)
 
 
