@@ -9,6 +9,10 @@
 
   &__right {
     width: 36%;
+
+    @media screen and (max-width: $website-breakpoint) {
+      width: 45%;
+    }
   }
 
   &__list-container {
@@ -40,5 +44,9 @@
     background-color: transparent;
     cursor: pointer;
     border-bottom: 2.5px solid transparent;
+
+    @media screen and (max-width: $website-breakpoint) {
+      font-size: 1.8rem;
+    }
   }
 }

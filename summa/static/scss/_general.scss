@@ -3,9 +3,14 @@
   width: 100%;
 
   &__inner {
-    max-width: 65%;
     width: 65%;
+    max-width: 65%;
     margin: 0 auto;
+
+    @media screen and (max-width: $website-breakpoint) {
+      width: 80%;
+      max-width: 80%;
+    }
   }
 }
 
@@ -28,10 +33,18 @@
     font-family: "Roboto Slab", "Russo One", serif, sans-serif;
     padding: .85rem 1.85rem;
     width: fit-content;
+
+    @media screen and (max-width: $website-breakpoint) {
+      font-size: 1.85rem;
+    }
   }
 
   &__text-right {
     font-size: 1.4rem;
+
+    @media screen and (max-width: $website-breakpoint) {
+      font-size: 2rem;
+    }
   }
 }
 

@@ -13,7 +13,6 @@ html {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-
 body {
   font-family: "Inter", "Poppins", "Russo One", "Roboto Slab", serif, sans-serif;
 }
@@ -277,9 +276,15 @@ body {
   width: 100%;
 }
 .nav__inner {
-  max-width: 65%;
   width: 65%;
+  max-width: 65%;
   margin: 0 auto;
+}
+@media screen and (max-width: 90em) {
+  .nav__inner {
+    width: 80%;
+    max-width: 80%;
+  }
 }
 
 .logo__link {
@@ -299,8 +304,18 @@ body {
   padding: 0.85rem 1.85rem;
   width: fit-content;
 }
+@media screen and (max-width: 90em) {
+  .logo__text {
+    font-size: 1.85rem;
+  }
+}
 .logo__text-right {
   font-size: 1.4rem;
+}
+@media screen and (max-width: 90em) {
+  .logo__text-right {
+    font-size: 2rem;
+  }
 }
 
 .main {
@@ -439,6 +454,11 @@ body {
 .navbar__right {
   width: 36%;
 }
+@media screen and (max-width: 90em) {
+  .navbar__right {
+    width: 45%;
+  }
+}
 .navbar__list-container {
   display: flex;
   justify-content: space-between;
@@ -466,6 +486,11 @@ body {
   cursor: pointer;
   border-bottom: 2.5px solid transparent;
 }
+@media screen and (max-width: 90em) {
+  .navbar__list-link {
+    font-size: 1.8rem;
+  }
+}
 
 .btn {
   padding: 1rem 1.6rem;
@@ -479,6 +504,11 @@ body {
   transition: all 0.2s ease-in;
   cursor: pointer;
 }
+@media screen and (max-width: 90em) {
+  .btn {
+    font-size: 1.8rem;
+  }
+}
 .btn--contact-us {
   text-decoration: none;
   width: 12rem;
@@ -488,6 +518,11 @@ body {
   margin-top: 3.2rem;
   text-decoration: none;
   font-size: 1.65rem;
+}
+@media screen and (max-width: 90em) {
+  .btn--contact-us--2 {
+    font-size: 1.8rem;
+  }
 }
 .btn--contact-us:hover, .btn--contact-us--2:hover {
   color: var(--light-yellow);

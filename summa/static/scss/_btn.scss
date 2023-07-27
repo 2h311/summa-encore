@@ -10,6 +10,10 @@
   transition: all 0.2s ease-in;
   cursor: pointer;
 
+  @media screen and (max-width: $website-breakpoint) {
+    font-size: 1.8rem;
+  }
+
   &--contact-us {
     text-decoration: none;
     width: 12rem;
@@ -19,6 +23,10 @@
       margin-top: 3.2rem;
       text-decoration: none;
       font-size: 1.65rem;
+
+      @media screen and (max-width: $website-breakpoint) {
+        font-size: 1.8rem;
+      }
     }
 
     &,
