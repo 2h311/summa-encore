@@ -23,17 +23,16 @@ def index():
 
 @main.route("/blog")
 def blog():
-    # TODO: use this for now, till we got the page sorted out. 
+    # TODO: use this for now, till we got the page sorted out.
     import pathlib
     json_file = pathlib.Path().cwd() / "summa" / "pages" / "posts.json"
     blog_posts = json.load(open(json_file))
-
     return render_template("blog.html", title="Blog", posts=blog_posts)
 
 
 @main.route("/careers")
 def careers():
-    return render_template("careers.html", title="Summa Encore Career Page")
+    return render_template("careers.html", title="Our Career Page")
 
 
 @main.route("/thanks")
