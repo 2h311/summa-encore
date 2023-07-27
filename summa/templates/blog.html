@@ -6,18 +6,18 @@
   <div class="blog__inner">
     <h2 class="blog__heading-2">All our blogs</h2>
     {% if posts %}
-      {% for post in posts %}
-        <div class="blog__post">
-          <div class="blog__post--left">
-            <img src="{{ post.images['url'] }}" class="blog__post-image" alt="{{ post.slug }}">
-          </div>
-          <div class="blog__post--right">
-            <p class="blog__post--date">Djane Doey &#8212; {{ post.get('createdAt') }}</p>
-            <h3 class="blog__heading--3">{{ post.title }}</h3>
-            <p class="blog__post--description">{{ post.description }}</p>
-          </div>
-        </div>  
-      {% endfor %}
+    {% for post in posts %}
+    <div class="blog__post">
+      <div class="blog__post--left">
+        <img src="{{ post.images['url'] }}" class="blog__post-image" alt="{{ post.slug }}">
+      </div>
+      <div class="blog__post--right">
+        <p class="blog__post--date">Djane Doey &#8212; {{ post.get('createdAt') }}</p>
+        <h3 class="blog__heading--3">{{ post.title }}</h3>
+        <p class="blog__post--description">{{ post.description }}</p>
+      </div>
+    </div>
+    {% endfor %}
     {% endif %}
   </div>
   {% include "footer.html" %}

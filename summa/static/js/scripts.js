@@ -2,7 +2,7 @@
   function scrollToElement(target) {
     const domRect = document.querySelector(target).getBoundingClientRect();
     window.scrollTo(domRect.x, domRect.y);
-  };
+  }
 
   // this is to make sure the year shown on the page is updated at all times instead of a manual update.
   const footerElement = document.querySelector(".js-footer-copy");
@@ -18,7 +18,7 @@
       location.replace(`${window.location.origin}#about`);
     } else {
       scrollToElement(".js-about-section");
-    } 
+    }
   });
 
   // scroll to view for #contact
@@ -31,6 +31,6 @@
       } else {
         scrollToElement(".js-contact-section");
       }
-    });   
-  };
-}());
+    });
+  }
+})();

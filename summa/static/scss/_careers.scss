@@ -1,11 +1,11 @@
-.careers{
+.careers {
   width: 100vw;
   max-width: 100vw;
   height: 100vh;
   max-height: 100vh;
   background-color: var(--light-yellow);
-  
-  &__inner{
+
+  &__inner {
     margin: 0 auto;
     width: 65%;
     height: 80vh;
@@ -15,21 +15,21 @@
     align-items: center;
   }
 
-  &__sign{
+  &__sign {
     fill: var(--dark-grey-1);
-    
-    & svg{
+
+    & svg {
       height: 10rem;
     }
   }
 
-  &__text{
+  &__text {
     font-size: 5.25rem;
     letter-spacing: -4.25px;
     color: var(--dark-grey-1);
   }
 
-  &__navbar{
+  &__navbar {
     padding-top: 2.25rem;
   }
 
